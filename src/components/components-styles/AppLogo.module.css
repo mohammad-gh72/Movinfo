@@ -1,0 +1,37 @@
+.logoContainer {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  text-align: center;
+}
+
+.logoContainer p {
+  margin-top: 1rem;
+  font-weight: 700;
+  color: var(--main-fontcolor);
+}
+
+.logoContainer img {
+  transition: all 0.3s;
+}
+.logoContainer img:hover {
+  cursor: pointer;
+}
+
+.imageAnimation:hover {
+  animation: rotateAnimation 5s infinite;
+}
+@keyframes rotateAnimation {
+  0% {
+    transform: rotateY(10deg);
+  }
+  50% {
+    transform: rotateY(360deg);
+  }
+
+  100% {
+    transform: rotateY(0);
+  }
+}

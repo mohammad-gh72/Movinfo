@@ -1,0 +1,38 @@
+.navParent {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.navParent ul {
+  width: 100%;
+  padding: 1.5rem 0;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  color: var(--main-fontcolor);
+}
+.navParent li {
+  margin-right: 4rem;
+  font-size: 16px;
+  font-weight: 500;
+}
+.navParent li:hover {
+  color: rgb(175, 183, 212);
+  cursor: pointer;
+}
+
+.navParent nav {
+  position: relative;
+}
+.navParent img {
+  position: absolute;
+  left: 3rem;
+  top: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.navParent img:hover {
+  cursor: pointer;
+}

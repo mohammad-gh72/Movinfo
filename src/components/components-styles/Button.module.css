@@ -1,0 +1,26 @@
+.btnParent {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnParent button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4a4f5c;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: var(--main-fontcolor);
+  padding: 0.3rem 1rem;
+  transition: all 0.3s;
+}
+
+.btnParent button:hover {
+  cursor: pointer;
+  background-color: #5c616d;
+}

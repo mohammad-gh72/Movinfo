@@ -1,0 +1,29 @@
+.parentErrMess {
+  margin: 0;
+  padding: 0;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parentErrMess span {
+  border-radius: 10px;
+  color: white;
+  padding: 3rem;
+
+  animation: errAnimation 2s infinite;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes errAnimation {
+  from {
+    border: 1px solid white;
+    filter: blur(2px);
+  }
+  to {
+    border: 3px solid rgb(238, 78, 78);
+    filter: blur(0);
+    box-shadow: 1px 10px 20px rgb(29, 10, 10);
+  }
+}

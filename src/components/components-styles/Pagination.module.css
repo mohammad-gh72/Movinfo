@@ -1,0 +1,28 @@
+.pagesParent {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 0;
+  /* display: flex; */
+}
+
+.pagesParent > button {
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  margin-right: 0.25rem;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+.pagesParent button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.prev,
+.next {
+  opacity: 0.7;
+}

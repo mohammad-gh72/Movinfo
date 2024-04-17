@@ -1,0 +1,46 @@
+.loadingParent {
+  margin: 0;
+  padding: 0;
+}
+
+.loadingSpinner {
+  width: 5rem;
+  height: 5rem;
+  border: 5px dotted rgb(242, 242, 243);
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: outerLoadingFillColor 5s infinite;
+}
+
+.innerLoadingSpinner {
+  width: 4rem;
+  height: 4rem;
+  border: 3px solid rgb(242, 242, 243);
+  border-radius: 50%;
+  position: absolute;
+  animation: innerLoadingFillColor 3s infinite;
+}
+
+@keyframes innerLoadingFillColor {
+  from {
+    border: 3px dotted rgb(242, 242, 243);
+    transform: rotate(0);
+  }
+
+  to {
+    border: 4px dotted rgb(242, 242, 243);
+    transform: rotate(360deg);
+  }
+}
+@keyframes outerLoadingFillColor {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}

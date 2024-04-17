@@ -1,0 +1,35 @@
+:root {
+  --primary-color: #1e2129;
+  --secondary-color: #2f3441;
+  --accent-color: #00acc1;
+  --main-fontcolor: #faf7f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/wp1945897.webp");
+  background-size: cover;
+  position: fixed;
+  z-index: -9999;
+  opacity: 0.05;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
