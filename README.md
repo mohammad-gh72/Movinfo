@@ -5,7 +5,7 @@
 از این رو این پروژه محدود به استفاده از تکنولوژی های حول محور موارد گفته شده می باشد.
 
 this project is about a website where users can search for movies and explore related information.
-This project was created during my exploration of React Router, User Hooks, and custom hooks. Therefore, it focuses specifically on utilizing these technologies.
+This project was created during my exploration of React Router, UseReducer Hooks, and custom hooks. Therefore, it focuses specifically on utilizing these technologies.
 
 ## Run Locally:
 
