@@ -1,5 +1,6 @@
 ## Movinfo app
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 این پروژه یک وبسایت است که در آن کاربران می توانند به جستجوی فیلم ها و خواندن اطلاعات مرتبط با آن بپردازند
 این پروژه زمانی ساخته شد که من در حال یادگیری مباحث پیرامون ,ری اکت روتر و هوک یوزردیوسر و همچین ساخت کاستوم هوک ها بودم بودم
@@ -13,6 +14,8 @@ This project was created during my exploration of React Router, User Hooks, and 
 To run the project locally, use the following command:
 
 =======
+=======
+>>>>>>> 28e5a303a471f1d9b04f712f0d915b963ab79de7
 
 این پروژه یک وبسایت است که در آن کاربران می توانند به جستجوی فیلم ها و خواندن اطلاعات مرتبط با آن بپردازند
 این پروژه زمانی ساخته شد که من در حال یادگیری مباحث پیرامون ,ری اکت روتر و هوک یوزردیوسر و همچین ساخت کاستوم هوک ها بودم بودم
@@ -28,6 +31,9 @@ This project was created during my exploration of React Router, User Hooks, and 
 
 To run the project locally, use the following command:
 
+<<<<<<< HEAD
+>>>>>>> 28e5a303a471f1d9b04f712f0d915b963ab79de7
+=======
 >>>>>>> 28e5a303a471f1d9b04f712f0d915b963ab79de7
 ```bash
 npm run dev
