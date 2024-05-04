@@ -1,4 +1,4 @@
-import { useReducer } from "react";
+import { useEffect, useReducer } from "react";
 import { NavLink, useLocation, useNavigate, useParams } from "react-router-dom";
 import MovieCard from "../components/MovieCard";
 import Button from "../components/Button";
@@ -30,6 +30,10 @@ function reducer(state, action) {
       return { ...state, errorMessagesText: action.payload };
     case "noMovieFound":
       return { ...state, errorMessagesText: action.payload };
+    case "makeListOfMoviesEmptyIfThereIsAnyNotFoundError":
+      return { ...state, movieList: [] };
+    case "weHaveMoviesInListSoWeDeletePossbleErrorMessagesText":
+      return { ...state, errorMessagesText: null };
     case "needToTryToFetchAgain":
       return { ...state, retry: false };
     case "tokeLongTimeToFetchStopFetching":
@@ -64,7 +68,7 @@ function SearchResault() {
   ] = useReducer(reducer, initialState);
   //--------------------
   useMovieFetch(
-    `http://www.omdbapi.com/?apikey=${KEY}&s=${movieName}&page=${page}`,
+    `https://www.omdbapi.com/?apikey=${KEY}&s=${movieName}&page=${page}`,
     dispatch,
     retry,
     5000

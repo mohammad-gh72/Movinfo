@@ -30,10 +30,14 @@ function useMovieFetch(url, dispatch, retry, waitingTime) {
             type: "noMovieFound",
             payload: "No Movie Found !",
           });
+          dispatch({ type: "makeListOfMoviesEmptyIfThereIsAnyNotFoundError" });
           throw new Error("No Movie Found !");
         }
 
         dispatch({ type: "getMoviesOnSearch", payload: data });
+        dispatch({
+          type: "weHaveMoviesInListSoWeDeletePossbleErrorMessagesText",
+        });
       } catch (err) {
         if (err.name !== "AbortError") console.error(err.message);
       } finally {
