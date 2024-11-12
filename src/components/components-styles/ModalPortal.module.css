@@ -1,0 +1,38 @@
+.parent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30rem;
+  height: 30rem;
+  border-radius: 8px;
+  background-color: white;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+}
+
+.close {
+  font-size: 20px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+.parent h2 {
+  font-size: 16px;
+  height: fit-content;
+  width: 100%;
+  padding: 1rem;
+  padding-left: 2rem;
+  text-transform: capitalize;
+}
+
+.parent img {
+  width: 40%;
+  padding: 1rem;
+}

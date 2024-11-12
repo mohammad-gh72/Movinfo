@@ -16,10 +16,15 @@ function MovieCard({
   movieName,
   image,
   imageLoadErrorImage = NoImageFound,
+  onClick,
   children,
 }) {
   return (
-    <div className={MovieCardStyle.movieCardParent} title={movieName}>
+    <div
+      className={MovieCardStyle.movieCardParent}
+      title={movieName}
+      onClick={onClick}
+    >
       <img
         src={image}
         alt={movieName}

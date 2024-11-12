@@ -15,6 +15,7 @@
 
 body {
   background-color: var(--primary-color);
+  position: relative;
 }
 
 body::before {

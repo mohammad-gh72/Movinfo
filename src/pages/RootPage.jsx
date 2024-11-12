@@ -5,6 +5,7 @@ import RootPageStyle from "./pages-styles/RootPage.module.css";
 import Navbar from "../components/Navbar";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import ModalPortal from "../components/ModalPortal";
 
 // import Button from "../components/Button";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -23,14 +24,15 @@ function RootPage() {
   return (
     <div>
       <Navbar logo={logoImage}>
-        <li>Top IMDB</li>
+        {/* <li>Top IMDB</li>
         <li>TV Shows</li>
-        <li>Movies</li>
+        <li>Movies</li> */}
 
         <li>
           <NavLink to="/">Home</NavLink>
         </li>
       </Navbar>
+
       <div className={RootPageStyle.rootpageContainer}>
         <div className={RootPageStyle.logo}>
           <Logo
@@ -67,6 +69,7 @@ function RootPage() {
           text: "Movies Info",
         }}
       </Button> */}
+      {/* <ModalPortal /> */}
     </div>
   );
 }

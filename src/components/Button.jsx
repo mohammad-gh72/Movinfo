@@ -15,6 +15,7 @@ function Button({
   leftGap = 0,
   rightGap = 0,
   iconPlacement = "left",
+  onClick,
 }) {
   let iconPlacmentBoolean = iconPlacement;
 
@@ -36,6 +37,7 @@ function Button({
           display: "flex",
           width: `${width}%`,
         }}
+        onClick={onClick}
       >
         {iconPlacmentBoolean === "true" && (
           <>
