@@ -224,7 +224,7 @@ function SearchResault() {
               plot={movieDataForModal.Plot}
               poster={movieDataForModal.Poster}
               onClick={() => {
-                setMovieDataForModal({});
+                // setMovieDataForModal({});
                 setShowModal(false);
               }}
             />
